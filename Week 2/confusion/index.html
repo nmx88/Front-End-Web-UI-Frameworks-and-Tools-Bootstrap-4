@@ -52,7 +52,7 @@
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-6 col-xs-12">
             <h1>Ristorante con Fusion</h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
@@ -60,9 +60,12 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm align-self-center">
+          <div class="col-6 col-sm align-self-center">
             <img src="./img/logo.png" class="img-fluid">
           </div>
+          <div class="col-6 col-sm align-self-center">
+      <a class="btn btn-warning btn-block" href="#link" role="button"> Reserve Table</a>
+        </div>
       </div>
     </header>
 
@@ -92,9 +95,7 @@
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-          <div class="media">
-            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
-            <div class="media-body">
+          
           <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
           <p>
             Featuring mouthwatering combinations with a choice of five different
@@ -103,6 +104,9 @@
             per person
           </p>
         </div>
+        <div class="media">
+          <img src="img/buffet.png" class="d-flex mr-3 img-thumbnail <!-- align-self-center-->" alt="buffet">
+          <div class="media-body">
       </div>
       </div>
       </div>
@@ -113,7 +117,7 @@
         </div>
         <div class="col col-sm order-sm-first col-md">
           <div class="media">
-            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+            <img class="d-flex mr-3 img-thumbnail lign-self-center" src="img/alberto.png" alt="alberto">
             <div class="media-body">
               <h2>Alberto Somayya</h2>
               <h4>Executive Chef</h4>
@@ -129,78 +133,82 @@
       </div>
     </div>
 
-
     <div class="row row-content align-items-center justify-content-center">
-      <div class="col-xl-8 col-xs-12" >
+      <div class="col-xl-8 col-xs-12">
         <div class="card">
           <h3 class="card-header bg-warning text-white <!--text-center-->">Reserve a Table</h3>
           <div class="card-body">
-            <form>
+            <form id="link">
+              
               <div class="form-group row">
-                <label for="optradio" class="col-xl-1 xs-12 col-form-label">
-                  <strong>Number of Guests</strong>
-                </label>
-            
-              <div class="form-check-inline offset-1">
-                <label class="form-check-label" for="radio1">
-                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">1
-                </label>
+                <div class="col-xl-1 col-sm-12">
+                  <label for="optradio" class="col-xs-12 col-form-label">
+                    <strong>Number of Guests</strong>
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">1
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">2
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio3">
+                    <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">3
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio4">
+                    <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">4
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio5">
+                    <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">5
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio6">
+                    <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6">6
+                  </label>
+                </div>
+
               </div>
 
-              <div class="form-check-inline">
-                <label class="form-check-label" for="radio2">
-                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">2
-                </label>
+              <div class="form-group row">
+                <div class="col-xl-1 col-xs-12">
+                  <label for="rendevouz" class="col-form-label">
+                    <strong>Date and Time</strong>
+                  </label>
+                </div>
+
+                <div class="col-xl-2 col-xs-12">
+                  <input type="date" class="form-control" id="date" name="rendevouz" placeholder="Date">
+                </div>
+
+                <div class="col-xl-2 col-xs-12">
+                  <input type="time" class="form-control" id="telnum" name="rendevouz" placeholder="Time">
+                </div>
               </div>
 
-              <div class="form-check-inline">
-                <label class="form-check-label" for="radio3">
-                  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">3
-                </label>
+              <div class="form-group row">
+                <div class="offset-md-1 col-md-10">
+                  <button type="submit" class="btn btn-primary">Reserve</button>
+                </div>
               </div>
-
-              <div class="form-check-inline">
-                <label class="form-check-label" for="radio4">
-                  <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">4
-                </label>
-              </div>
-
-              <div class="form-check-inline">
-                <label class="form-check-label" for="radio5">
-                  <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">5
-                </label>
-              </div>
-
-              <div class="form-check-inline">
-                <label class="form-check-label" for="radio6">
-                  <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6">6
-                </label>
-              </div>
-            </div>
-
-        <div class="form-group row">
-          <label for="rendevouz" class="col-xl-1 col-xs-12 col-form-label">
-            <strong>Date and Time</strong>
-          </label>
-        <div class="col-xl-2 col-xs-12">
-          <input type="date" class="form-control" id="date" name="rendevouz" placeholder="Date">
-        </div>
-
-        <div class="col-xl-2 col-xs-12">
-          <input type="time" class="form-control" id="telnum" name="rendevouz" placeholder="Time">
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <div class="offset-md-1 col-md-10">
-          <button type="submit" class="btn btn-primary">Reserve</button>
-        </div>
-      </div>
-
 
             </form>
+          </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -228,7 +236,7 @@
               <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
-          <div class="col-2 col-sm-4 align-self-center">
+          <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
               <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a> <!--Doesn't exist anymore-->
               <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
@@ -241,7 +249,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-auto">
-            <p>© Copyright 2018 Ristorante Con Fusion</p>
+            <p>© Copyright 2020 Ristorante Con Fusion</p>
           </div>
         </div>
       </div>
