@@ -110,12 +110,105 @@
             <img src="./img/logo.png" class="img-fluid">
           </div>
           <div class="col-6 col-sm align-self-center">
+      <!-- Assignment III task III invoke modal - remove tooltip and script of tooltip -->
       <a role="button" class="btn btn-block nav-link btn-warning"
-        data-toggle="tooltip" data-html="true"
-        title="Or Call us at <br><strong>+852 1234578</strong>"
-        data-placement="bottom" href="#link"> Reserve Table</a>
+        data-toggle="modal" data-target="#reserveModal"> Reserve Table</a>
         </div>
       </div>
+
+      <!-- Assignment III task I Creating a Modal-->
+      <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Reserve a Table</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row">
+                  <div class="col-xl-1 col-sm-12">
+                    <label for="optradio" class="col-xs-12 col-form-label">
+                      <strong>Number of Guests</strong>
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">1
+                    </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">2
+                    </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio3">
+                      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">3
+                    </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio4">
+                      <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">4
+                    </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio5">
+                      <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">5
+                    </label>
+                  </div>
+  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio6">
+                      <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6">6
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-xl-1 col-sm-12">
+                    <label for="optradio2" class="col-xs-12 col-form-label">
+                      <strong>Section</strong>
+                    </label>
+                  </div>
+                  <div class="form-check-inline"
+                </div>
+  
+                <div class="form-group row">
+                  <div class="col-xl-1 col-xs-12">
+                    <label for="rendevouz" class="col-form-label">
+                      <strong>Date and Time</strong>
+                    </label>
+                  </div>
+  
+                  <div class="col-xl-2 col-xs-12">
+                    <input type="date" class="form-control" id="date" name="rendevouz" placeholder="Date">
+                  </div>
+  
+                  <div class="col-xl-2 col-xs-12">
+                    <input type="time" class="form-control" id="telnum" name="rendevouz" placeholder="Time">
+                  </div>
+                </div>
+  
+                <div class="form-group row">
+                  <div class="offset-md-1 col-md-10">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Reserve</button>
+                  </div>
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <div class="container">
@@ -371,10 +464,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
       $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
       });
-    </script>
+    </script>  -->   
+    <!-- Cancelled because i don't need to use tooltip when invoking a modal -->
   </body>
 </html>
