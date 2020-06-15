@@ -65,3 +65,11 @@ body {
  color: black;   
 }
 
+#smoking {
+    display: none;
+}
+
+#nonsmoking {
+    display: none;
+}
+
